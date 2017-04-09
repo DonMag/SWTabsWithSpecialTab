@@ -67,13 +67,13 @@
 				685A6F6B1E9ADF32009A3206 /* AppDelegate.swift */,
 				685A6F6D1E9ADF32009A3206 /* FirstViewController.swift */,
 				685A6F6F1E9ADF32009A3206 /* SecondViewController.swift */,
+				685A6F7F1E9ADF50009A3206 /* FourthViewController.swift */,
+				685A6F811E9ADF5D009A3206 /* FifthViewController.swift */,
+				685A6F831E9ADF68009A3206 /* SpecialViewController.swift */,
 				685A6F711E9ADF32009A3206 /* Main.storyboard */,
 				685A6F741E9ADF32009A3206 /* Assets.xcassets */,
 				685A6F761E9ADF32009A3206 /* LaunchScreen.storyboard */,
 				685A6F791E9ADF32009A3206 /* Info.plist */,
-				685A6F7F1E9ADF50009A3206 /* FourthViewController.swift */,
-				685A6F811E9ADF5D009A3206 /* FifthViewController.swift */,
-				685A6F831E9ADF68009A3206 /* SpecialViewController.swift */,
 				685A6F851E9ADF84009A3206 /* MyTabBarViewController.swift */,
 			);
 			path = SWTabsWithSpecialTab;
@@ -319,6 +319,7 @@
 				685A6F7E1E9ADF32009A3206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

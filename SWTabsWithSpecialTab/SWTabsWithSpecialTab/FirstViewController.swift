@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  SWTabsWithSpecialTab
 //
-//  Created by Don Mini on 4/9/17.
+//  Created by DonMag on 4/9/17.
 //  Copyright © 2017 DonMag. All rights reserved.
 //
 

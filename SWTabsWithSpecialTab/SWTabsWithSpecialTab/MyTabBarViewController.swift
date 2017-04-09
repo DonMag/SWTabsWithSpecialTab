@@ -2,7 +2,7 @@
 //  MyTabBarViewController.swift
 //  SWTabsWithSpecialTab
 //
-//  Created by Don Mini on 4/9/17.
+//  Created by DonMag on 4/9/17.
 //  Copyright © 2017 DonMag. All rights reserved.
 //
 
@@ -13,8 +13,6 @@ class MyTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-		
 		setupMiddleButton()
     }
 
@@ -44,27 +42,20 @@ class MyTabBarViewController: UITabBarController {
 	}
 	
 	func menuButtonAction(sender: UIButton) {
-//		self.selectedIndex = 2
-		print("Here we are!")
+		
+		// Don't navigate to the tab index
+		//self.selectedIndex = 2
+		
+		// instead, load and present the view you really want to see
 		
 		if let vc = storyboard?.instantiateViewController(withIdentifier: "SpecialVC") as? SpecialViewController {
 		
 			vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
 
 			self.present(vc, animated: true, completion: nil)
+		
 		}
 		
 	}
 	
-	
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
