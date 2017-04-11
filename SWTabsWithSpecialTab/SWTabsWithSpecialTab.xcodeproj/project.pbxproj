@@ -17,6 +17,8 @@
 		685A6F821E9ADF5D009A3206 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A6F811E9ADF5D009A3206 /* FifthViewController.swift */; };
 		685A6F841E9ADF68009A3206 /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A6F831E9ADF68009A3206 /* SpecialViewController.swift */; };
 		685A6F861E9ADF84009A3206 /* MyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A6F851E9ADF84009A3206 /* MyTabBarViewController.swift */; };
+		7CDB4D1B1E9D133400ABDAE1 /* SpecInNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4D1A1E9D133400ABDAE1 /* SpecInNavViewController.swift */; };
+		7CDB4D1D1E9D141700ABDAE1 /* SpecNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB4D1C1E9D141700ABDAE1 /* SpecNavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		685A6F811E9ADF5D009A3206 /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		685A6F831E9ADF68009A3206 /* SpecialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
 		685A6F851E9ADF84009A3206 /* MyTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarViewController.swift; sourceTree = "<group>"; };
+		7CDB4D1A1E9D133400ABDAE1 /* SpecInNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecInNavViewController.swift; sourceTree = "<group>"; };
+		7CDB4D1C1E9D141700ABDAE1 /* SpecNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecNavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				685A6F761E9ADF32009A3206 /* LaunchScreen.storyboard */,
 				685A6F791E9ADF32009A3206 /* Info.plist */,
 				685A6F851E9ADF84009A3206 /* MyTabBarViewController.swift */,
+				7CDB4D1A1E9D133400ABDAE1 /* SpecInNavViewController.swift */,
+				7CDB4D1C1E9D141700ABDAE1 /* SpecNavViewController.swift */,
 			);
 			path = SWTabsWithSpecialTab;
 			sourceTree = "<group>";
@@ -157,7 +163,9 @@
 				685A6F701E9ADF32009A3206 /* SecondViewController.swift in Sources */,
 				685A6F861E9ADF84009A3206 /* MyTabBarViewController.swift in Sources */,
 				685A6F6C1E9ADF32009A3206 /* AppDelegate.swift in Sources */,
+				7CDB4D1B1E9D133400ABDAE1 /* SpecInNavViewController.swift in Sources */,
 				685A6F6E1E9ADF32009A3206 /* FirstViewController.swift in Sources */,
+				7CDB4D1D1E9D141700ABDAE1 /* SpecNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

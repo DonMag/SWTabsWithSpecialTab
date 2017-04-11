@@ -48,12 +48,20 @@ class MyTabBarViewController: UITabBarController {
 		
 		// instead, load and present the view you really want to see
 		
-		if let vc = storyboard?.instantiateViewController(withIdentifier: "SpecialVC") as? SpecialViewController {
+//		if let vc = storyboard?.instantiateViewController(withIdentifier: "SpecialVC") as? SpecialViewController {
+//		
+//			vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+//
+//			self.present(vc, animated: true, completion: nil)
+//		
+//		}
 		
+		if let vc = storyboard?.instantiateViewController(withIdentifier: "specNavVC") as? SpecNavViewController {
+			
 			vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-
+			
 			self.present(vc, animated: true, completion: nil)
-		
+			
 		}
 		
 	}

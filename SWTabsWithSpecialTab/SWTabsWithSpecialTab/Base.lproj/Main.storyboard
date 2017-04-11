@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -60,6 +60,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIc-b5-EQV">
+                                <rect key="frame" x="112.5" y="234" width="149" height="30"/>
+                                <state key="normal" title="Present Modal NavVC"/>
+                                <connections>
+                                    <action selector="didTap:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FNH-DF-9ol"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
                                 <rect key="frame" x="83" y="313" width="209.5" height="41.5"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
@@ -77,8 +84,10 @@
                         <constraints>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="sIc-b5-EQV" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="KoO-g0-hRM"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="sIc-b5-EQV" secondAttribute="bottom" constant="49" id="vE3-Ak-edl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
@@ -86,6 +95,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-646" y="188"/>
+        </scene>
+        <!--Spec In Nav View Controller-->
+        <scene sceneID="JPO-zG-nwc">
+            <objects>
+                <viewController storyboardIdentifier="specInNavVC" id="HPZ-sf-hHe" customClass="SpecInNavViewController" customModule="SWTabsWithSpecialTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TC3-Ue-TLV"/>
+                        <viewControllerLayoutGuide type="bottom" id="bso-NT-vYn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cI3-GI-wlh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="SpecInNav View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tPd-q3-Tbr">
+                                <rect key="frame" x="55.5" y="312.5" width="263.5" height="42"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SpecInNavViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmg-52-LmZ">
+                                <rect key="frame" x="69.5" y="362.5" width="235.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-ck-y8D">
+                                <rect key="frame" x="141" y="232.5" width="93" height="30"/>
+                                <state key="normal" title="Tap to Return">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissTapped:" destination="HPZ-sf-hHe" eventType="touchUpInside" id="fm2-fy-Cq9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQp-wh-mv9">
+                                <rect key="frame" x="169.5" y="143" width="35" height="30"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Dlz-Il-VWp" kind="show" id="5iK-Wa-G2A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tPd-q3-Tbr" firstAttribute="centerY" secondItem="cI3-GI-wlh" secondAttribute="centerY" id="6s1-xS-Ra4"/>
+                            <constraint firstItem="tPd-q3-Tbr" firstAttribute="centerX" secondItem="cI3-GI-wlh" secondAttribute="centerX" id="9JD-Mq-Kry"/>
+                            <constraint firstItem="iQp-wh-mv9" firstAttribute="top" secondItem="TC3-Ue-TLV" secondAttribute="bottom" constant="79" id="CHc-Sj-8aS"/>
+                            <constraint firstItem="iQp-wh-mv9" firstAttribute="centerX" secondItem="cI3-GI-wlh" secondAttribute="centerX" id="DSe-8r-NH6"/>
+                            <constraint firstItem="bFU-ck-y8D" firstAttribute="centerX" secondItem="cI3-GI-wlh" secondAttribute="centerX" id="FAq-Fp-zJj"/>
+                            <constraint firstItem="bmg-52-LmZ" firstAttribute="top" secondItem="tPd-q3-Tbr" secondAttribute="bottom" constant="8" symbolic="YES" id="V1G-ab-QKy"/>
+                            <constraint firstItem="tPd-q3-Tbr" firstAttribute="top" secondItem="bFU-ck-y8D" secondAttribute="bottom" constant="50" id="ZjS-NB-MQa"/>
+                            <constraint firstItem="bmg-52-LmZ" firstAttribute="centerX" secondItem="tPd-q3-Tbr" secondAttribute="centerX" id="gfB-nz-qlh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1uv-0g-GvM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDM-T3-23o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="-1275"/>
         </scene>
         <!--My Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -107,7 +177,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="-578"/>
+            <point key="canvasLocation" x="-10" y="-591"/>
         </scene>
         <!--Special View Controller-->
         <scene sceneID="VCp-mH-GMg">
@@ -154,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGg-Y1-IAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="-667"/>
+            <point key="canvasLocation" x="1930" y="-1275"/>
         </scene>
         <!--Fifth-->
         <scene sceneID="0NJ-QU-8Dg">
@@ -272,6 +342,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1e-ff-945" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="620" y="188"/>
+        </scene>
+        <!--Spec Nav View Controller-->
+        <scene sceneID="ZfU-WM-JYE">
+            <objects>
+                <navigationController storyboardIdentifier="specNavVC" automaticallyAdjustsScrollViewInsets="NO" id="C3s-od-m2e" customClass="SpecNavViewController" customModule="SWTabsWithSpecialTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BIm-8E-3v1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HPZ-sf-hHe" kind="relationship" relationship="rootViewController" id="jkd-aQ-hpq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocD-Gc-U4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="-1275"/>
         </scene>
     </scenes>
     <resources>
